@@ -10,6 +10,19 @@ from math import *
 import pyWriter
 from pyWriter import *
 
+
+# Lazy way to get rid of erroneous errors by passing them to stderr and then flushing stderr
+class surpressErrors:
+    def write(self, msg):
+        pass
+
+    def flush(self):
+        pass
+    
+
+sys.stderr = surpressErrors()
+
+
 win = GraphWin("Create your window", 1750, 900)
 
 # DO NOT LET THEM TOUCH THIS RECTANGLE
