@@ -14,4 +14,3 @@ A simple UI creation tool to speed up drawing graphical interfaces.
 # Known Bugs
 - Sometimes shapes will unexpectedly draw when switching colors or shapes while still having another shape selected
   * Suggestion to address: always switch back to regular cursor when changing color, changing shape, or saving
-- Error messages will pile up in output window/console for a list access
